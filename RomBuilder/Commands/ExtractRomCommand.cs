@@ -1,6 +1,7 @@
 using System;
 using System.CommandLine;
 using System.CommandLine.Invocation;
+using RomBuilder.Config;
 
 namespace RomBuilder.Commands
 {
@@ -20,7 +21,8 @@ namespace RomBuilder.Commands
         void Execute(string config, string rom)
         {
             Console.WriteLine($"Extracting {rom} with {config}");
+            var romConfig = RomConfigFile.Read(config);
+            if (romConfig == null) return;
         }
-
     }
 }

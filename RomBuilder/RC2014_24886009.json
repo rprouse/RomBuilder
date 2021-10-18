@@ -1,0 +1,30 @@
+{
+  "Size": "0xF000",
+  "Images": [
+    {
+      "Offset": "0x0000",
+      "Size": "0x2000",
+      "Filename": "24886009/MBasic_32K_SIO2.bin"
+    },
+    {
+      "Offset": "0x2000",
+      "Size": "0x2000",
+      "Filename": "24886009/MBasic_56K_SIO2.bin"
+    },
+    {
+      "Offset": "0x4000",
+      "Size": "0x4000",
+      "Filename": "24886009/SCMonitor_MBasic_CPM_64K.bin"
+    },
+    {
+      "Offset": "0x8000",
+      "Size": "0x2000",
+      "Filename": "24886009/CPM_Monitor_64K_SIO2.bin"
+    },
+    {
+      "Offset": "0xE000",
+      "Size": "0x2000",
+      "Filename": "24886009/SCMonitor.bin"
+    }
+  ]
+}
