@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RomBuilder": {
+      "commandName": "Project",
+      "commandLineArgs": "build test.json rom.bin"
+    }
+  }
+}
