@@ -1,13 +1,14 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using RomBuilder.Serialization;
 
 namespace RomBuilder.Config
 {
-    public class Rom
+    public class Rom : BaseImage
     {
+        /// <summary>
+        /// The default fill character for the ROM, often set to a NOP
+        /// </summary>
         [JsonConverter(typeof(HexStringJsonConverter))]
-        public uint Size { get; set; }
-
-        public string Filename { get; set; }
+        public byte Default { get; set; }
     }
 }

@@ -29,6 +29,7 @@ namespace RomBuilder.Tests.Config
         {
             var config = RomConfigFile.Read(_configFile);
             config.Should().NotBeNull();
+            config.Rom.Default.Should().Be(0xFF);
             config.Rom.Size.Should().Be(0x10000);
             config.Images.Should().HaveCount(5);
             config.Images[0].Filename.Should().Be("imgs/2-MBasic_32K_SIO2.bin");

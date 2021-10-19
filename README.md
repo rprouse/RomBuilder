@@ -17,6 +17,7 @@ an empty slot of 16K.
 
 ```json{
   "Rom": {
+    "Default": "0xFF",
     "Size": "0x10000",
     "Filename": "roms/24886009.BIN"
   },
@@ -52,7 +53,8 @@ an empty slot of 16K.
 
 Notice that all sizes and offsets are strings in hex. This file can be used
 to extract the five image files out of the rom or to combine the five image
-files into one rom file.
+files into one rom file. The Default in ROM is the default byte to set
+uninitialized bytes to, often a NOP.
 
 The program does some rudementary checks, but expects that you did your math
 correctly and all the sizes and offsets are correct. I may add more checks if

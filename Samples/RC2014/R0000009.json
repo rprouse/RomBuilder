@@ -1,5 +1,6 @@
 {
   "Rom": {
+    "Default": "0xFF",
     "Size": "0x10000",
     "Filename": "roms/R0000009.BIN"
   },

@@ -41,6 +41,7 @@ namespace RomBuilder.Commands
 
             foreach(var image in romConfig.Images)
             {
+                // Create the directory if it doesn't exist
                 FileInfo fi = new FileInfo(image.Filename);
                 if (fi.Directory != null)
                     Directory.CreateDirectory(fi.DirectoryName);
