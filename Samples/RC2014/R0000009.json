@@ -1,0 +1,15 @@
+{
+    "Size": "0xF000",
+    "Images": [
+        {
+            "Offset": "0x0000",
+            "Size": "0x2000",
+            "Filename": "imgs/R-MBasic_32K_ACIA.bin"
+        },
+        {
+            "Offset": "0xE000",
+            "Size": "0x2000",
+            "Filename": "imgs/9-SCMonitor.bin"
+        }
+    ]
+}

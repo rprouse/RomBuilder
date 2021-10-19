@@ -1,5 +1,7 @@
 # Decoding RC2014 ROMs
 
+These are based on the factory ROMs from the [RC2014 GitHub](https://github.com/RC2014Z80/RC2014/tree/master/ROMs/Factory).
+
 The RC2014 uses 27C512 64k ROMs. Every ROM has an 8 digit code on it.  Each digit, 
 from left to right, refers to an 8k bank from 0x0000 to 0xD000. This bank can be selected 
 with the A13, A14, A15 jumpers;

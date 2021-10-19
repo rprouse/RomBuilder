@@ -4,27 +4,27 @@
     {
       "Offset": "0x0000",
       "Size": "0x2000",
-      "Filename": "24886009/MBasic_32K_SIO2.bin"
+      "Filename": "imgs/2-MBasic_32K_SIO2.bin"
     },
     {
       "Offset": "0x2000",
       "Size": "0x2000",
-      "Filename": "24886009/MBasic_56K_SIO2.bin"
+      "Filename": "imgs/4-MBasic_56K_SIO2.bin"
     },
     {
       "Offset": "0x4000",
       "Size": "0x4000",
-      "Filename": "24886009/SCMonitor_MBasic_CPM_64K.bin"
+      "Filename": "imgs/88-SCMonitor_MBasic_CPM_64K.bin"
     },
     {
       "Offset": "0x8000",
       "Size": "0x2000",
-      "Filename": "24886009/CPM_Monitor_64K_SIO2.bin"
+      "Filename": "imgs/6-CPM_Monitor_64K_SIO2.bin"
     },
     {
       "Offset": "0xE000",
       "Size": "0x2000",
-      "Filename": "24886009/SCMonitor.bin"
+      "Filename": "imgs/9-SCMonitor.bin"
     }
   ]
 }

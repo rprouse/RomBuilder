@@ -2,7 +2,7 @@
   "profiles": {
     "RomBuilder": {
       "commandName": "Project",
-      "commandLineArgs": "extract RC2014_24886009.json RC2014_24886009.bin"
+      "commandLineArgs": "extract $(SolutionDir)Samples/RC2014/24886009.json $(SolutionDir)Samples/RC2014/roms/24886009.BIN"
     }
   }
 }
