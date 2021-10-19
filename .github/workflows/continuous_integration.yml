@@ -20,27 +20,3 @@ jobs:
 
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-
-    - name: Package NuGet
-      run: dotnet pack --no-build --configuration Release
-
-    - name: Upload Artifacts
-      uses: actions/upload-artifact@v2
-      with:
-        name: nupkg
-        path: RomBuilder/nupkg/*.nupkg
-
-  publish:
-    runs-on: ubuntu-latest
-    needs: build
-
-    # only push nuget package for PRs merged to master
-    if: github.ref == 'refs/heads/main'
-    steps:
-      - name: Download Artifacts
-        uses: actions/download-artifact@v2
-        with:
-          name: nupkg
-
-      - name: Publish NuGet to GitHub Packages
-        run: dotnet nuget push "**/dotnet-rombuilder.*.nupkg" -k ${{ secrets.GITHUB_TOKEN }} -s https://nuget.pkg.github.com/rprouse/index.json --skip-duplicate --no-symbols true

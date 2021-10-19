@@ -9,30 +9,13 @@
     <Product>EPROM Rom Builder Utility</Product>
     <Copyright>Copyright (c) 2021 Rob Prouse</Copyright>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageProjectUrl>https://github.com/rprouse/RomBuilder</PackageProjectUrl>
     <RepositoryUrl>https://github.com/rprouse/RomBuilder</RepositoryUrl>
-    <PackageId>dotnet-rombuilder</PackageId>
-    <Version>0.0.1</Version>
-    <PackAsTool>true</PackAsTool>
-    <ToolCommandName>rom-builder</ToolCommandName>
-    <PackageOutputPath>./nupkg</PackageOutputPath>
-    <NeutralLanguage>en-CA</NeutralLanguage>
     <RepositoryType>git</RepositoryType>
+    <Version>0.0.2</Version>
+    <NeutralLanguage>en-CA</NeutralLanguage>
     <Description>ROM Builder merges several hex files into a single ROM file ready to be burned to an EPROM or extracts images out of a ROM file.</Description>
     <ApplicationIcon>electronics.ico</ApplicationIcon>
-    <PackageIcon>electronics.png</PackageIcon>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="nupkg\**" />
-    <EmbeddedResource Remove="nupkg\**" />
-    <None Remove="nupkg\**" />
-    <None Include="electronics.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
 
   <ItemGroup>
     <None Include="..\LICENSE">
