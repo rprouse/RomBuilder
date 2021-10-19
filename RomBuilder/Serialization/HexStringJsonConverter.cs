@@ -10,14 +10,14 @@ namespace RomBuilder.Serialization
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            writer.WriteValue($"0x{value:x}");
+            writer.WriteValue($"0x{value:X}");
         }
 
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
             var str = reader.Value as string;
             if (str == null || !str.StartsWith("0x"))
-                throw new JsonSerializationException();
+                throw new JsonSerializationException("Value must be in the format 0xFF");
             return Convert.ToUInt32(str, 16);
         }
     }

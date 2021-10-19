@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-    <AssemblyName>rom-builder</AssemblyName>
+    <AssemblyName>RomBuilder</AssemblyName>
     <Authors>Rob Prouse</Authors>
     <Company>Alteridem Consulting</Company>
     <Product>EPROM Rom Builder Utility</Product>
@@ -11,7 +11,7 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <RepositoryUrl>https://github.com/rprouse/RomBuilder</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>0.0.2</Version>
+    <Version>0.0.3</Version>
     <NeutralLanguage>en-CA</NeutralLanguage>
     <Description>ROM Builder merges several hex files into a single ROM file ready to be burned to an EPROM or extracts images out of a ROM file.</Description>
     <ApplicationIcon>electronics.ico</ApplicationIcon>
@@ -28,6 +28,13 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="System.CommandLine" Version="2.0.0-beta1.21308.1" />
+  </ItemGroup>
+
+  <!-- Make Internals visible to the unit tests -->
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>RomBuilder.Tests</_Parameter1>
+    </AssemblyAttribute>
   </ItemGroup>
 
 </Project>
