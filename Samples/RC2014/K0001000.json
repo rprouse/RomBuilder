@@ -1,0 +1,19 @@
+{
+  "Rom": {
+    "Default": "0xFF",
+    "Size": "0x10000",
+    "Filename": "roms/K0001000.BIN"
+  },
+  "Images": [
+    {
+      "Offset": "0x0000",
+      "Size": "0x2000",
+      "Filename": "imgs/K-MBasic_56K_ACIA.bin"
+    },
+    {
+      "Offset": "0x8000",
+      "Size": "0x2000",
+      "Filename": "imgs/1-CPM_Monitor_64K_ACIA.bin"
+    }
+  ]
+}
