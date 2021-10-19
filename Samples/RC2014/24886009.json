@@ -1,5 +1,6 @@
 {
-  "Size": "0xF000",
+  "Size": "0xFFFF",
+  "Filename": "roms/24886009.BIN",
   "Images": [
     {
       "Offset": "0x0000",

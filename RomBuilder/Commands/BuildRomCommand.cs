@@ -11,16 +11,15 @@ namespace RomBuilder.Commands
         {
             var command = new Command("build", "Builds a ROM from several hex image files")
             {
-                new Argument<string>("config", "ROM configuration/layout file"),
-                new Argument<string>("rom", "ROM file to build")
+                new Argument<string>("config", "ROM configuration/layout file")
             };
-            command.Handler = CommandHandler.Create((string config, string rom) => Execute(config, rom));
+            command.Handler = CommandHandler.Create((string config) => Execute(config));
             return command;
         }
 
-        void Execute(string config, string rom)
+        void Execute(string config)
         {
-            Console.WriteLine($"Building {rom} with {config}");
+            Console.WriteLine($"Building with {config}");
             var romConfig = RomConfigFile.Read(config);
             if (romConfig == null) return;
         }
