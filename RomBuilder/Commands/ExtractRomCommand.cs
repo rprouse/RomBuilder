@@ -25,17 +25,17 @@ namespace RomBuilder.Commands
             var romConfig = RomConfigFile.Read(config);
             if (romConfig == null) return;
 
-            if(!File.Exists(romConfig.Filename))
+            if(!File.Exists(romConfig.Rom.Filename))
             {
-                Console.WriteLine($"The ROM {romConfig.Filename} does not exist.");
+                Console.WriteLine($"The ROM {romConfig.Rom.Filename} does not exist.");
                 return;
             }
 
-            Console.WriteLine($"Reading ROM {romConfig.Filename}");
-            byte[] rom = File.ReadAllBytes(romConfig.Filename);
-            if(rom.Length != romConfig.Size)
+            Console.WriteLine($"Reading ROM {romConfig.Rom.Filename}");
+            byte[] rom = File.ReadAllBytes(romConfig.Rom.Filename);
+            if(rom.Length != romConfig.Rom.Size)
             {
-                Console.WriteLine($"ROM is {rom.Length} bytes but config is {romConfig.Size} bytes.");
+                Console.WriteLine($"ROM is {rom.Length} bytes but config is {romConfig.Rom.Size} bytes.");
                 return;
             }
 

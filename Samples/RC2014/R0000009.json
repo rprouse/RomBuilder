@@ -1,6 +1,8 @@
 {
-  "Size": "0x10000",
-  "Filename": "roms/R0000009.BIN",
+  "Rom": {
+    "Size": "0x10000",
+    "Filename": "roms/R0000009.BIN"
+  },
   "Images": [
     {
       "Offset": "0x0000",

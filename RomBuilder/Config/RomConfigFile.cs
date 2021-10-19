@@ -1,7 +1,6 @@
 using System;
 using System.IO;
 using Newtonsoft.Json;
-using RomBuilder.Serialization;
 
 namespace RomBuilder.Config
 {
@@ -27,10 +26,7 @@ namespace RomBuilder.Config
             }
         }
 
-        [JsonConverter(typeof(HexStringJsonConverter))]
-        public uint Size { get; set; }
-
-        public string Filename { get; set; }
+        public Rom Rom { get; set; }
 
         public Image[] Images { get; set; }
     }
