@@ -31,7 +31,7 @@ namespace RomBuilder.Commands
                 return;
             }
 
-            Console.WriteLine($"Reading ROM {romConfig.Rom.Filename}");
+            Console.WriteLine($"Reading rom {romConfig.Rom.Filename}");
             byte[] rom = File.ReadAllBytes(romConfig.Rom.Filename);
             if(rom.Length != romConfig.Rom.Size)
             {
@@ -51,7 +51,7 @@ namespace RomBuilder.Commands
                     .Take((int)image.Size)
                     .ToArray();
 
-                Console.WriteLine($"Writing {image.Filename}");
+                Console.WriteLine($"Writing image {image.Filename}");
                 File.WriteAllBytes(image.Filename, imageBytes);
             }
         }

@@ -21,7 +21,7 @@ namespace RomBuilder.Commands
 
         void Execute(string config)
         {
-            Console.WriteLine($"Building with {config}");
+            Console.WriteLine($"Building using {config}");
             var romConfig = RomConfigFile.Read(config);
             if (romConfig == null) return;
                 
@@ -55,7 +55,7 @@ namespace RomBuilder.Commands
             if (fi.Directory != null)
                 Directory.CreateDirectory(fi.DirectoryName);
 
-            Console.WriteLine($"Writing {romConfig.Rom.Filename}");
+            Console.WriteLine($"Writing rom {romConfig.Rom.Filename}");
             File.WriteAllBytes(romConfig.Rom.Filename, bytes);
         }
     }

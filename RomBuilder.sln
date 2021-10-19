@@ -41,11 +41,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "roms", "roms", "{B0BA1696-3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "imgs", "imgs", "{061EC2CF-853C-4E26-85D5-E68E47CDC1C7}"
 	ProjectSection(SolutionItems) = preProject
+		Samples\RC2014\imgs\1-CPM_Monitor_64K_ACIA.bin = Samples\RC2014\imgs\1-CPM_Monitor_64K_ACIA.bin
 		Samples\RC2014\imgs\2-MBasic_32K_SIO2.bin = Samples\RC2014\imgs\2-MBasic_32K_SIO2.bin
 		Samples\RC2014\imgs\4-MBasic_56K_SIO2.bin = Samples\RC2014\imgs\4-MBasic_56K_SIO2.bin
 		Samples\RC2014\imgs\6-CPM_Monitor_64K_SIO2.bin = Samples\RC2014\imgs\6-CPM_Monitor_64K_SIO2.bin
 		Samples\RC2014\imgs\88-SCMonitor_MBasic_CPM_64K.bin = Samples\RC2014\imgs\88-SCMonitor_MBasic_CPM_64K.bin
 		Samples\RC2014\imgs\9-SCMonitor.bin = Samples\RC2014\imgs\9-SCMonitor.bin
+		Samples\RC2014\imgs\K-MBasic_56K_ACIA.bin = Samples\RC2014\imgs\K-MBasic_56K_ACIA.bin
 		Samples\RC2014\imgs\R-MBasic_32K_ACIA.bin = Samples\RC2014\imgs\R-MBasic_32K_ACIA.bin
 	EndProjectSection
 EndProject
