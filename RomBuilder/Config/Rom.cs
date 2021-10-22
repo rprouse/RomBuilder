@@ -1,4 +1,4 @@
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 using RomBuilder.Serialization;
 
 namespace RomBuilder.Config
@@ -8,7 +8,7 @@ namespace RomBuilder.Config
         /// <summary>
         /// The default fill character for the ROM, often set to a NOP
         /// </summary>
-        [JsonConverter(typeof(HexStringJsonConverter))]
+        [JsonConverter(typeof(ByteHexJsonConverter))]
         public byte Default { get; set; }
     }
 }
