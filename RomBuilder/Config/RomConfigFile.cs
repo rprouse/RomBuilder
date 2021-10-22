@@ -1,6 +1,6 @@
 using System;
 using System.IO;
-using Newtonsoft.Json;
+using System.Text.Json;
 
 namespace RomBuilder.Config
 {
@@ -17,7 +17,7 @@ namespace RomBuilder.Config
             try
             {
                 string json = File.ReadAllText(config);
-                return JsonConvert.DeserializeObject<RomConfigFile>(json);
+                return JsonSerializer.Deserialize<RomConfigFile>(json);
             }
             catch (Exception ex)
             {
